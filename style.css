@@ -3,8 +3,79 @@ body {
   padding: 0;
 }
 
-<div class="main"></div>​
 .cover {
-  background-image: url(http://www.skyandtelescope.com/wp-content/uploads/2015-04-15_552ec785e77b6_download.jpg);
+  background-image: url(http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/05/15/100738170-Greece.1910x1000.jpg);
   background-size: cover;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+
+.nav_list {
+  list-style-type: none;
+  display: flex;
+  padding-right: 30px;
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+.cs52 {
+  font-size: 30px;
+  color: white;
+}
+
+.nav_item {
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.page_center {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+
+.page_center_h1 {
+  font-size: 50px;
+  color: white;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.page_center_h2 {
+  font-size: 20px;
+  color: white;
+  font-family: serif;
+  text-align: center;
+}
+
+.page_center_h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page_center_h3_p {
+  font-size: 20px;
+  color: white;
+  font-family: serif;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  text-decoration: none;
 }
