@@ -1,5 +1,10 @@
-html {
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+<div class="main"></div>​
+.cover {
+  background-image: url(http://www.skyandtelescope.com/wp-content/uploads/2015-04-15_552ec785e77b6_download.jpg);
+  background-size: cover;
 }
