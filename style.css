@@ -166,8 +166,17 @@ a:link {
 }
 
 .footer_item {
-  margin-right: 10px;
+  margin-right: 6px;
   font-size: 18px;
+  color: white;
+}
+
+.footer_item:hover {
+  color: grey;
+}
+
+.icon:hover {
+  color: grey;
 }
 
 .button {
@@ -191,17 +200,23 @@ a:link {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 640px) {
+.mobile_nav_list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-family: 'Habibi', serif;
+}
 
-  .cover {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Venice_at_Night_Italy_-_Venezia_italia_-_Creative_Commons_by_gnuckx_(4700928037).jpg);
-  }
+.mobile_screen li{
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 640px) {
 
   .nav_list {
     opacity:0;
     height: 0px;
   }
-
 
   .mobile_menu {
     list-style-type: none;
@@ -229,52 +244,45 @@ a:link {
     margin: 0;
   }
 
+  .nav_item_menu:hover {
+    border: 3px solid black;
+  }
+
   .page_center {
     padding-bottom: 6px;
   }
 
   .page_center_h1 {
     font-size: 40px;
-    color: white;
-    font-family: fantasy;
-    text-align: center;
-    width: 100%;
-    text-shadow: 2px 2px 5px grey;
+    width: 90%;
     margin: 0;
   }
 
   .page_center_h2 {
     font-size: 18px;
-    color: white;
-    font-family: cursive;
-    text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 
   .page_center_h3 {
     padding: 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
     width: 80%;
   }
 
   .page_center_h3_button {
-    display: flex;
     flex-flow: column;
-    justify-content: center;
   }
 
   .page_center_h3_p {
     font-size: 18px;
+    margin: 0;
   }
 
   .bottom {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 25px;
     color: white;
     border-top-style: solid;
@@ -296,14 +304,13 @@ a:link {
     padding-bottom: 10px;
   }
 
-  div { position: relative; }
-  input[type=checkbox] {
-     opacity: 0;
+  #links ul:hover {
+    color: grey;
   }
 
-  h2 {
-    font-size: 30px;
-    color: white;
+  /* For checkbox */
+  input[type=checkbox] {
+     opacity: 0;
   }
 
   label {
@@ -311,18 +318,18 @@ a:link {
   }
 
   /* Default State */
-  .mobile_nav_list {
+  .mobile_screen {
     max-height: 0;
     overflow: hidden;
     padding-left: 30px;
     transition: max-height 0.4s ease;
-    font-family: 'Habibi', serif;
   }
 
   /* Toggled State */
-  input[type=checkbox]:checked ~ h2 ~ .mobile_nav_list {
-    max-height: 20px;
-    color:white;
+  #toggle:checked ~ .mobile_screen #top{
+    max-height: 100px;
+    overflow: visible;
+    color:green;
   }
 
 }
